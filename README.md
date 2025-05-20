@@ -20,7 +20,7 @@ Synthesis requires three files as follows,
 
 ◦ SDC (Synopsis Design Constraint) File (.sdc)
 
-   ### Counter.tcl:
+   ### Counter.tcl
  ```
 read_libs/cadence/install/FOUNDRY-01/digital/90nm/dig/lib/slow.lib
 read hdl counter.v
@@ -56,7 +56,7 @@ count=count-1;
 end
 endmodule
 ```
-  ### Input constraints.sdc:
+  ### Input constraints.sdc
 ```
 create_clock name clk period 2 waveform {01} [get_ports "clk"]
 set_clock_transition rise 0.1 [get_clocks "clk"]
